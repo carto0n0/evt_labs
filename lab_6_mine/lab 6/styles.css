@@ -95,29 +95,45 @@ p {
   0% {
     top: -70px;
   }
-  15% {
+  13% {
     top: 0px;
+  }
+  15%{
+    height: 25px;
   }
   30% {
     top: -35px;
+    height: 30px;
   }
-  40% {
+  38% {
     top: 0px;
+  }
+  40%{
+    height: 25px;
   }
   50% {
     top: -16px;
+    height: 30px;
   }
-  60% {
+  58% {
     top: 0px;
+  }
+  60%{
+    height: 25px;
   }
   70% {
     top: -8px;
+    height: 30px;
   }
-  80% {
+  78% {
     top: 0px;
+  }
+  80%{
+    height: 25px;
   }
   90% {
     top: -4px;
+    height: 30px;
   }
   100% {
     top: 0px;
