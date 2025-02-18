@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes going {
+  0% {
+    padding: 10px 20px;
+    margin: 30px;
+    transform: translateX(0);
+  }
+  25% {
+    padding: 12px 24px;
+    margin: 28px;
+    transform: translateX(35px);
+  }
+
+  50% {
+    padding: 10px 20px;
+    margin: 30px;
+    transform: translateX(0px);
+  }
+
+  75% {
+    padding: 12px 24px;
+    margin: 28px;
+    transform: translateX(-35px);
+  }
+
+  100% {
+    padding: 10px 20px;
+    margin: 30px;
+    transform: translateX(0px);
+  }
+}
+
+.botton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bottonn {
+  padding: 10px 20px;
+  background-color: rgb(244, 155, 210);
+  border: 2px solid rgb(94, 24, 115);
+  border-radius: 90px;
+  color: rgb(94, 24, 115);
+  margin: 30px;
+  animation: going 2s infinite;
+
+  &:hover {
+    animation-play-state: paused;
+    background-color: rgb(148, 237, 148);
+  }
+}
+
+.link{
+  display: flex;
+  justify-content: center;
+}
+
+.linkk {
+  position: relative; 
+  text-decoration: none;
+  color:rgb(94, 24, 115);
+  transition: all 2s ease;
+  &::after{
+    content: "";
+    background-color: rgb(148, 237, 148);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    transition: all 2s ease;
+  }
+} 
+
+.linkk:hover{
+  color: rgb(148, 237, 148);
+  &::after{
+    width: 100%;
+    left: 0;
+ }
+}
+
+p {
+  text-align: center;
+  color: rgb(94, 24, 115);
+}
+
+@keyframes fall {
+  0% {
+    top: -70px;
+  }
+  15% {
+    top: 0px;
+  }
+  30% {
+    top: -35px;
+  }
+  40% {
+    top: 0px;
+  }
+  50% {
+    top: -16px;
+  }
+  60% {
+    top: 0px;
+  }
+  70% {
+    top: -8px;
+  }
+  80% {
+    top: 0px;
+  }
+  90% {
+    top: -4px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.ball {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.fball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgb(244, 155, 210);
+  position: relative;
+}
+
+.ball:hover .fball {
+  animation: fall 2s 1;
+}
+
+.fballsurface {
+  width: 100%;
+  height: 12px;
+  background-color: rgb(94, 24, 115);
+}
+
