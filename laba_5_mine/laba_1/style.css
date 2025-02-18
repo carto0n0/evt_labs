@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "block1";
+  src: url("./fonts/Felidae Regular.ttf");
+}
+
+@font-face {
+  font-family: "block2";
+  src: url("./fonts/MartianMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "block3";
+  src: url("./fonts/Murecho Black Regular.ttf");
+}
+
+#film1 p{
+  text-align: right;
+}
+
+#film1 {
+  font-family: 'block1', sans-serif;
+}
+
+#film2 p{
+  text-align: left;
+}
+
+#film2 {
+  font-family: 'block2', sans-serif;
+}
+
+#film3 p{
+  text-align: center;
+}
+
+#film3 {
+  font-family: 'block3', sans-serif;
+}
+
+body {
+  padding: 0 120px 0 120px;
+  background: #fff;
+  background-color: honeydew;
+}
+.title-wrapper  {
+  width: 100%;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: honeydew;
+  max-width: 1440px;
+  width: 1440px;
+  height: 100%;
+}
+
+li {
+  margin: 0 0 5px 0;
+}
+ul {
+  list-style-type: none;
+}
+
+li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+ul li:nth-child(3) {
+  font-weight: 600;
+}
+
+.film {
+  margin: 40px 0 0 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+.photos img {
+  width: 300px; /* Убираем фиксированную ширину */
+  max-width: 30%; /* Ограничиваем максимальную ширину */
+  height: 300px; /* Сохраняем пропорции по высоте */
+  max-height: 300px; /* Ограничиваем высоту */
+  object-fit: contain; /* Изображение полностью помещается в блок */
+  border: 2px solid #ccc; /* Добавляем границу (по желанию) */
+  padding: 5px; /* Отступ внутри рамки */
+  background-color: #f5f5f5; /* Добавляем фон (по желанию) */
+  border-radius: 10px;
+}
+
+
+td {
+  padding: 0 3px;
+}
+
+p {
+  word-wrap: break-word; /* Переносит длинные слова */
+    white-space: normal;
+}
