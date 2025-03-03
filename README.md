@@ -4,7 +4,7 @@ https://carto0n0.github.io/evt_labs/
 
 # CV: Анисенко Татьяна Александровна
 
-![me](https://yandex.by/images/search?from=tabbar&img_url=https%3A%2F%2Fpictra.co%2Ffiles%2Fimg%2Fphoto%2Fgroza-kartinki%2Fgroza-kartinki-10.webp&lr=157&pos=1&rpt=simage&text=%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D1%8F "Моя фотография")
+![me](img1.jpg "my photo")
 
 ## 📋 Основная информация
 
