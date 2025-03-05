@@ -1,0 +1,115 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ff7cd5; /* Пример цвета фона для header */
+    text-align: center; /* Выравнивание текста по центру */
+    z-index: 1000; /* Чтобы header оставался поверх остального контента */
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff7cd5; /* Пример цвета фона для footer */
+    text-align: center; /* Выравнивание текста по центру */
+    z-index: 1000; /* Чтобы footer оставался поверх остального контента */
+}
+
+.main p:not(.blockquote) {
+    font-style: normal;
+}
+
+.blockquote {
+    font-style: italic;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.main article p:first-of-type::first-letter {
+    font-size: 150%;
+    color: #ca4fff; 
+}
+
+.footer a {
+    text-decoration: underline !important;
+    color: rgb(101, 101, 255) !important;
+}
+
+.footer a:hover {
+    cursor: default;
+}
+
+body .wrapper {
+    max-width: unset !important;
+}
+
+.main article.article img {
+    display: inline-block;
+    height: auto;
+    max-width: 150px;
+}
+
+.main article.article.first img,
+.main article.article.third img,
+.main article.article.fifth img {
+    float: left;
+}
+
+.main article.article.second img,
+.main article.article.fourth img {
+    float: right;
+}
+
+.main article.article h2 {
+    clear: both;
+}
+
+.word {
+    position: sticky;
+    width: 100px;
+    top: 20px;
+    z-index: 100;
+}
+
+p.word.first {
+    background-color: rgb(246, 255, 194);
+    color: rgb(217, 255, 0);
+    top: 20px;
+    left: 0px;
+}
+
+p.word.second {
+    background-color: rgb(184, 184, 255);
+    color: rgb(0, 0, 255);
+    top: 20px;
+    left: 100px;
+}
+
+p.word.third {
+    background-color: rgb(208, 255, 208);
+    color: rgb(0, 255, 0);
+    top: 20px;
+    left: 200px;
+}
+
+p.word.fourth {
+    background-color: rgb(243, 193, 255);
+    color: rgb(204, 0, 255);
+    top: 20px;
+    left: 300px;
+}
+
+p.word.fifth {
+    background-color: rgb(201, 242, 255);
+    color:  rgb(0, 195, 255);
+    top: 20px;
+    left: 400px;
+}
